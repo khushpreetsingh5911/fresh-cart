@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- -------------navbar---------------
+ -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container d-flex justify-content-between">
+
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=" " height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="btn d-md-inline d-sm-inline d-flex d-lg-none gap-3 ">
+                    <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+                    <button type="button" class="btn btn-outline-success position-relative"><span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span><i class="fa-solid fa-user"></i></button>
+                    <button type="button" class="btn btn-outline-success"><i
+                            class="fa-solid fa-shopping-bag"></i></button>
+                </div>
+            </div>
+            <div class="btn d-md-none d-sm-none d-lg-flex d-none gap-3  ">
+                <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+                <button type="button" class="btn btn-outline-success position-relative"><span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span><i class="fa-solid fa-user"></i></button>
+                <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-shopping-bag"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- --------------drop-down-menu------------- -->
+
+
+
+
+    <div class="container">
+        <div class="container d-lg-flex gap-3 d-md-block ">
+
+            <div class="dropdown">
+                <a class="btn btn-success  dropdown-toggle fw-bold" href="#" role="button" id="dropdownMenuLink"
+                    data-mdb-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+                    All Departments
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Home
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Shop
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Store
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Mega Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn   btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Accounts
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------sales-offer--------------- -->
+
+    <div class="container border  mt-3 ">
+        <div class=" row d-flex flex-sm-column flex-lg-row flex-column my-5">
+            <div class=" col-12 col-lg-6 justify-content-center d-flex flex-column  gap-2 gap-lg-5">
+                <h6 class=" bg-warning text-center p-2 rounded-3 w-100 w-lg-50 ">Opening Sale Discount 50%
+                </h6>
+                <h2 class="fw-bold fs-1">SuperMarket For Fresh Grocery </h2>
+                <p>Introducing new model for online grocery shopping and convinient home delivery</p>
+                <button class="btn btn-dark w-50">Shop</button>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-lg-row-reverse flex-sm-column flex-column justify-content-center  ">
+                <img src="img/sale-image.png" class="img-fluid" alt="Sample" width="100%" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ---------------product-view-------------- -->
+
+
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <h2>Featured Category</h2>
+        </div>
+        <div class="row d-flex ">
+
+            <div class="product col-lg-3 col-md-6 col-sm-6 border">
+                <a href=""><img src="img/packagnin g.png" height="200px  ">
+                    <p class="">Dairy, Bread & Eggs</p>
+                </a>
+            </div>
+            <div class="product col-lg-3 col-md-6  col-sm-6 border">
+                <a href=""><img src="img/thin-golden-background-fat-pile.png" height="200px  " alt="">
+                    <p class="">Snacks & Munchies</p>
+                </a>
+
+            </div>
+            <div class="product col-lg-3 col-md-6 col-sm-6  border">
+                <a href=""><img src="img/cookies-placed-column.png" height="200px  " alt="">
+                    <p class="">Bakery & Biscuits</p>
+                </a>
+
+            </div>
+            <div class="product col-lg-3 col-md-6 col-sm-6  border ">
+
+                <a href=""><img src="img/basket-full-vegetables.png" height="200px  " alt="">
+                    <p class="">Fruits & Vegetables</p>
+                </a>
+
+            </div>
+
+
+            <!-- ----------popular products--------------- -->
+
+
+
+            <div class="container mt-5">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Popular Products</h3>
+                    </div>
+                </div>
+                <div class="row d-flex gap-2">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex gap-2 mt-4">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col star border">
+                                <img src="img/packagnin g.png" height="200px" alt="">
+                                <p>Snack and Munchies</p>
+                                <h6>Haldiram's Sev Bhaji</h6>
+                                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i>4.5(150)</p>
+                                <div class="col-12 add-button d-flex justify-content-center gap-5">
+                                    <p class="fw-bold">18$</p>
+                                    <a href="">+Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container mt-5 p-5">
+            <div class="row">
+                <div class="col-12 col-lg-3 text-start ">
+                    <i class="fa-regular fa-clock text-success fs-1"></i>
+                    <h5>10 minute grocery now </h5>
+                    <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-3 text-start">
+                    <i class="fa-solid fa-gift text-success fs-1"></i>
+                    <h5>10 minute grocery now </h5>
+                    <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess
+                        & offers.
+                    </p>
+                </div>
+                <div class="col-12  col-lg-3 text-start">
+                    <i class="fa-solid fa-box text-success fs-1"></i>
+                    <h5>10 minute grocery now </h5>
+                    <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other
+                        categories.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-3 text-start">
+                    <i class="fa-solid fa-rotate-left text-success fs-1"></i>
+                    <h5>10 minute grocery now </h5>
+                    <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions
+                        asked policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ---------------footer section----------- -->
+
+
+        <div class="container mt-5 p-5">
+            <div class="row">
+                <div class="col-12 text col-lg-3 d-flex flex-column  text-start">
+                    <h4 class="text-success">Catorgaries</h4>
+                    <a href="">Vegetables & Fruits</a>
+                    <a href="">Breakfast & instant food</a>
+                    <a href="">Bakery & Biscuits</a>
+                    <a href="">Atta, rice & dal</a>
+                    <a href="">Sauces & spreads</a>
+                    <a href="">Organic & gourmet</a>
+                    <a href="">Baby care</a>
+                    <a href="">Cleaning essentials</a>
+                    <a href="">Personal care</a>
+
+                </div>
+                <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                    <h4 class="text-success">Get to know us</h4>
+                    <a href="">Company </a>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Help Center</a>
+                    <a href="">One value</a>
+                </div>
+                <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                    <h4 class="text-success">For Customers</h4>
+
+                    <a href="">Payment</a>
+                    <a href="">Shipping</a>
+                    <a href="">Product Return</a>
+                    <a href="">FAQ</a>
+                    <a href="">Shop Checkout</a>
+                </div>
+                <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                    <h4 class="text-success">Become a Shopper</h4>
+
+                    <a href="">Shopper oppertunities</a>
+                    <a href="">Earnings</a>
+                    <a href="">Become a shopper</a>
+                    <a href="">Earnings</a>
+                    <a href="">new Recruiters</a>
+                </div>
+                <div class="col-12 text col-lg-3 d-flex flex-column text-start">
+                    <h4 class="text-success">Freshcart programs</h4>
+                    <a href="">Gifts card</a>
+                    <a href="">Freshcart programs</a>
+                    <a href="">Earnings</a>
+                    <a href="">Products
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ----------------payment section----------- -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-row">
+                    <h5>Payment Partners</h5>
+                    <a href=""><img src="img/AMAZON.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/AMERICAN.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/MASTER.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/PAY.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/VISA.png" height="30px" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-row  text-end">
+                    <h6 class="me-2">Get delivery with the freshcart</h6>
+                    <a href=""><img src="img/apple.png" height="49px" alt=""></a>
+                    <a href=""><img src="img/googke.png" height="52px" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- -------------copy right-------------- -->
+        <div class="container ">
+            <div class="row d-flex flex-row">
+                <div class="col-12  text">
+                    <p class="text-secondary">Follow us on</p>
+                    <a href=""><i class="fa-brands fa-facebook text-secondary"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter text-secondary"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram text-secondary"></i></a>
+                </div>
+                <div class="col-12">
+                    <p class="text-secondary">© 2022 - 2023 FreshCart eCommerce HTML Template. All rights reserved.
+                        Powered by Codescandy.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/43f3f12f65.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
