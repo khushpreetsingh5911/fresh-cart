@@ -1,3 +1,4 @@
+
 .btn-group:hover{
 color: forestgreen;
 }
@@ -9,9 +10,6 @@ color: forestgreen;
 }
 .star p i{
     color: rgb(239, 224, 14);
-}
-.star:hover{
-    border: 1px solid green ;
 }
 .add-button a{
     text-decoration: none;
@@ -49,4 +47,16 @@ color: forestgreen;
     padding: .8em 1em;
     border-radius: 5px;
 
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(8, 162, 8);
+
+}
+.breadcrumb a:hover{
+    color:black;
+}
+.list-item-2{
+    border-bottom: 1px solid black;
 }
