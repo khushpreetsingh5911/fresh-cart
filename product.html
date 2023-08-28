@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid d-flex justify-content-between">
+
+      <a class="navbar-brand" href="/index.html"><img src="img/logo.png" alt=" " height="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <div class="btn d-md-inline d-sm-inline d-flex d-lg-none gap-3 ">
+          <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+          <button type="button" class="btn btn-outline-success position-relative"><span
+              class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span><i class="fa-solid fa-user"></i></button>
+          <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-shopping-bag"></i></button>
+        </div>
+      </div>
+      <div class="btn d-md-none d-sm-none d-lg-flex d-none gap-3  ">
+        <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+        <button type="button" class="btn btn-outline-success position-relative"><span
+            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span><i class="fa-solid fa-user"></i></button>
+        <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-shopping-bag"></i></button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- --------------drop-down-menu------------- -->
+
+
+
+
+  <div class="container-fluid">
+    <div class="container bg-light   d-lg-flex gap-3 d-md-block  p-3">
+
+      <div class="dropdown ">
+        <a class="btn  dropdown-toggle fw-bold text-white" href="#" role="button" id="dropdownMenuLink"
+          data-mdb-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+          All Departments
+        </a>
+
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="/page2.html">Fruits & veggies</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn  btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Home
+        </button>
+        <ul class="dropdown-menu text-white">
+          <li><a class="dropdown-item" href="/index.html">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn    btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Shop
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn    btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Store
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item " href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn  btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Mega Menu
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item " href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group ">
+        <button class="btn    btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Pages
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item " href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn    btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          Accounts
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container-fluid">
+
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+
+
+
+
+    <div class="container d-lg-flex flex-lg-row  d-flex flex-column gap-5  ">
+      <div class="row ">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/CHOCOLATEONE.png" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/CHOCOLATETWO.png" class="d-block w-100" alt="...">
+
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+      <div class="row   ">
+        <div class="col gap-2">
+          <p class="text-success">Bakery Biscuits</p>
+          <div class="col star py-3">
+            <h3 class="fw-bold">Napolitanke Ljesnjak</h3>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col mb-3">
+                <button class="btn bg-secondary text-white  fw-bold fs-5">200g</button>
+                <button class="btn bg-secondary text-white  fw-bold fs-5">500g</button>
+                <button class="btn bg-secondary text-white  fw-bold fs-5">800g</button>
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>How Much Piece You Want</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="row mt-3">
+                <div class="col-lg-3 rounded-3 bg-success text-white p-2">
+                  <a href="" style="text-decoration: none;color: white  ;">
+                    <i class="fa-solid fa-bag-shopping text-white"></i> Add to cart
+                  </a>
+                </div>
+                <div class="col fs-3">
+                  <a href=""><i class="fa-solid fa-heart text-success"></i></a>
+                </div>
+
+              </div>
+              <div class="row d-flex mt-4">
+                <div class="col text-start">
+                  <p>Product:</p>
+                  <p>Availability:</p>
+                  <p>Type:</p>
+                  <p>Shipping:</p>
+                </div>
+                <div class="col">
+                  <p>FBB00255</p>
+                  <p>In Stock</p>
+                  <p>Fruits</p>
+                  <p>01 day shipping.( Free pickup today) </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="container mt-5">
+    <div class="col-md-4 ">
+      <!-- Scrollspy -->
+      <div id="scrollspy1" class="sticky-top">
+        <ul class="nav flex-column nav-pills menu-sidebar">
+          <li class="nav-item">
+            <a class="nav-link fs-3 fw-bold p-2" href="#example-1"><i class="fa fa-arrow-right"></i>Product Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3 fw-bold p-2" href="#example-2"><i class="fa fa-arrow-right"></i>Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3 fw-bold p-2" href="#example-3"><i class="fa fa-arrow-right"></i>Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3 fw-bold p-2" href="#example-4"><i class="fa fa-arrow-right"></i>Seller </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Scrollspy -->
+    </div>
+
+    <div class="row ">
+      <div class="col-md-8">
+        <!-- Spied element -->
+        <div data-mdb-spy="scroll" data-mdb-target="#scrollspy1" data-mdb-offset="0" class="scrollspy-example">
+          <section id="example-1">
+            <h3 class="bg-success text-white text-center">Product Details</h3>
+            <div class="row">
+              <h3>Nutrient Value & Benefits</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, tellus iaculis urna bibendum in lacus,
+                integer. Id imperdiet vitae varius sed magnis eu nisi nunc sit. Vel, varius habitant ornare ac
+                rhoncus.
+                Consequat risus facilisis ante ipsum netus risus adipiscing sagittis sed. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+            <div class="row">
+              <h3>Storage Tips</h3>
+              <p>Nisi, tellus iaculis urna bibendum in lacus, integer. Id imperdiet vitae varius sed magnis eu nisi
+                nunc
+                sit. Vel, varius habitant ornare ac rhoncus. Consequat risus facilisis ante ipsum netus risus
+                adipiscing
+                sagittis sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="row">
+              <h3>Unit</h3>
+              <p>3 units</p>
+            </div>
+            <div class="row">
+              <h3>Seller</h3>
+              <p>DMart Pvt. LTD</p>
+            </div>
+            <div class="row">
+              <h3>Disclaimer</h3>
+              <p>Image shown is a representation and may slightly vary from the actual product. Every effort is made
+                to
+                maintain accuracy of all information displayed.</p>
+            </div>
+
+        </div>
+        </section>
+        <section id="example-2">
+          <h3 class="bg-success text-white text-center">Information</h3>
+          <div class="row  ">
+            <div class="col">
+              <h4>Weight</h4>
+            </div>
+            <div class="col">
+              <h5>1000 Grams</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Ingredient Type</h4>
+            </div>
+            <div class="col">
+              <h5>#2 in Fruits</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Net Quantity</h4>
+            </div>
+            <div class="col">
+              <h5> 340.0 Gram</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Product Dimensions</h4>
+            </div>
+            <div class="col">
+              <h5> 9.6 x 7.49 x 18.49 cm</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>
+                ASIN</h4>
+            </div>
+            <div class="col">
+              <h5>SB0025UJ75W</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Best Sellers Rank</h4>
+            </div>
+            <div class="col">
+              <h5>#2 in Fruits</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Date First Available</h4>
+            </div>
+            <div class="col">
+              <h5>30 April 2022</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Item Weight</h4>
+            </div>
+            <div class="col">
+              <h5>500g</h5>
+            </div>
+          </div>
+          <div class="row  ">
+            <div class="col">
+              <h4>Generic Name</h4>
+            </div>
+            <div class="col">
+              <h5>SB0025UJ75W</h5>
+            </div>
+          </div>
+        </section>
+        <section id="example-3">
+          <h3>Reviews</h3>
+
+
+          <div class="row d-lg-flex flex-lg-row">
+            <div class="row d-flex flex-column">
+              <h3 class="bg-success text-white text-center">Reviews</h3>
+              <h4>Customer Review</h4>
+              <p><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                  class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                  class="fa-solid fa-star-half text-warning"></i> 4.1 out of 5 (11,130 global ratings)</p>
+              <div class="col">
+                <p>5 Star<i class="fa-solid fa-star text-warning"></i></p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="50">
+                  <div class="progress-bar bg-warning" style="width: 95%"></div>
+                </div>
+                <p>95%</p>
+              </div>
+              <div class="col">
+                <p>4 Star<i class="fa-solid fa-star text-warning"></i></p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="50">
+                  <div class="progress-bar bg-warning" style="width: 50%"></div>
+                </div>
+                <p>50%</p>
+              </div>
+              <div class="col">
+                <p>3 Star<i class="fa-solid fa-star text-warning"></i></p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="50">
+                  <div class="progress-bar bg-warning" style="width: 40%"></div>
+                </div>
+                <p>40%</p>
+              </div>
+              <div class="col">
+                <p>2 Star<i class="fa-solid fa-star text-warning"></i></p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="50">
+                  <div class="progress-bar bg-warning" style="width: 30%"></div>
+                </div>
+                <p>30%</p>
+              </div>
+              <div class="col">
+                <p>1 Star<i class="fa-solid fa-star text-warning"></i></p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="50">
+                  <div class="progress-bar bg-warning" style="width: 20%"></div>
+                </div>
+                <p>20%</p>
+              </div>
+              <div class="col">
+                <h4>Review this product</h4>
+                <p>Share your thoughts with other customers.</p>
+                <button class="btn bg-success text-white">write the reviews</button>
+              </div>
+            </div>
+            <div class="row">
+              <h4 class="text-white bg-success text-center mt-5">Customer Reviews</h4>
+              <div class="col d-lg-flex  flex-row gap-3 ">
+                <div class="row">
+                  <div class="col"><img src="img/member-4.png" height="70px" width="70px " style="border-radius: 50%;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h6 class="fw-bold fs-4">william sans</h6>
+                    <p>28 December 2022
+                    <p class="text-success">verified purchase</p>
+                    </p>
+                    <h6 class="fw-bold"><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star-half text-warning"></i>Great Product</h6>
+                    <p>Product quality is good. But, weight seemed less than 1kg. Since it is being sent in open
+                      package, there is a possibility of pilferage in between. FreshCart sends the veggies and fruits
+                      through sealed plastic covers and Barcode on the weight etc. . </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row border-bottom p-2">
+              <div class="col d-lg-flex flex-row gap-2 ">
+                <button class="btn btn-outline-success "><i class="fa-regular fa-thumbs-up  "></i>Helpfull</button>
+                <button class="btn btn-outline-success "><i class="fa-regular fa-flag "></i>Report</button>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col d-lg-flex  flex-row gap-3 ">
+                <div class="row">
+                  <div class="col"><img src="img/member-4.png" height="70px" width="70px " style="border-radius: 50%;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h6 class="fw-bold fs-4">william sans</h6>
+                    <p>28 December 2022
+                    <p class="text-success">verified purchase</p>
+                    </p>
+                    <h6 class="fw-bold"><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                        class="fa-solid fa-star-half text-warning"></i>Great Product</h6>
+                    <p>Product quality is good. But, weight seemed less than 1kg. Since it is being sent in open
+                      package, there is a possibility of pilferage in between. FreshCart sends the veggies and fruits
+                      through sealed plastic covers and Barcode on the weight etc. . </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row border-bottom p-2">
+              <div class="col d-lg-flex flex-row gap-2 ">
+                <button class="btn btn-outline-success "><i class="fa-regular fa-thumbs-up  "></i>Helpfull</button>
+                <button class="btn btn-outline-success "><i class="fa-regular fa-flag "></i>Report</button>
+              </div>
+            </div>
+          </div>
+          <!-- Spied element -->
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3>Related Products</h3>
+      </div>
+    </div>
+    <div class="row d-flex gap-2">
+      <div class="col">
+        <div class="row">
+          <div class="col star border">
+            <img src="img/packagnin g.png" height="200px" alt="">
+            <p>Snack and Munchies</p>
+            <h6>Haldiram's Sev Bhaji</h6>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+            <div class="col-12 add-button d-flex justify-content-center gap-5">
+              <p class="fw-bold">18$</p>
+              <a href="">+Add</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col star border">
+            <img src="img/packagnin g.png" height="200px" alt="">
+            <p>Snack and Munchies</p>
+            <h6>Haldiram's Sev Bhaji</h6>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+            <div class="col-12 add-button d-flex justify-content-center gap-5">
+              <p class="fw-bold">18$</p>
+              <a href="">+Add</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col star border">
+            <img src="img/packagnin g.png" height="200px" alt="">
+            <p>Snack and Munchies</p>
+            <h6>Haldiram's Sev Bhaji</h6>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+            <div class="col-12 add-button d-flex justify-content-center gap-5">
+              <p class="fw-bold">18$</p>
+              <a href="">+Add</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col star border">
+            <img src="img/packagnin g.png" height="200px" alt="">
+            <p>Snack and Munchies</p>
+            <h6>Haldiram's Sev Bhaji</h6>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+            <div class="col-12 add-button d-flex justify-content-center gap-5">
+              <p class="fw-bold">18$</p>
+              <a href="">+Add</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col star border">
+            <img src="img/packagnin g.png" height="200px" alt="">
+            <p>Snack and Munchies</p>
+            <h6>Haldiram's Sev Bhaji</h6>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>4.5(150)</p>
+            <div class="col-12 add-button d-flex justify-content-center gap-5">
+              <p class="fw-bold">18$</p>
+              <a href="">+Add</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 p-5">
+    <div class="row">
+        <div class="col-12 text col-lg-3 d-flex flex-column  text-start">
+            <h4 class="text-success">Catorgaries</h4>
+            <a href="">Vegetables & Fruits</a>
+            <a href="">Breakfast & instant food</a>
+            <a href="">Bakery & Biscuits</a>
+            <a href="">Atta, rice & dal</a>
+            <a href="">Sauces & spreads</a>
+            <a href="">Organic & gourmet</a>
+            <a href="">Baby care</a>
+            <a href="">Cleaning essentials</a>
+            <a href="">Personal care</a>
+
+        </div>
+        <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+            <h4 class="text-success">Get to know us</h4>
+            <a href="">Company </a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Help Center</a>
+            <a href="">One value</a>
+        </div>
+        <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+            <h4 class="text-success">For Customers</h4>
+
+            <a href="">Payment</a>
+            <a href="">Shipping</a>
+            <a href="">Product Return</a>
+            <a href="">FAQ</a>
+            <a href="">Shop Checkout</a>
+        </div>
+        <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+            <h4 class="text-success">Become a Shopper</h4>
+
+            <a href="">Shopper oppertunities</a>
+            <a href="">Earnings</a>
+            <a href="">Become a shopper</a>
+            <a href="">Earnings</a>
+            <a href="">new Recruiters</a>
+        </div>
+        <div class="col-12 text col-lg-3 d-flex flex-column text-start">
+            <h4 class="text-success">Freshcart programs</h4>
+            <a href="">Gifts card</a>
+            <a href="">Freshcart programs</a>
+            <a href="">Earnings</a>
+            <a href="">Products
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- ----------------payment section----------- -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6 d-flex flex-row">
+            <h5>Payment Partners</h5>
+            <a href=""><img src="img/AMAZON.png" height="30px" alt=""></a>
+            <a href=""><img src="img/AMERICAN.png" height="30px" alt=""></a>
+            <a href=""><img src="img/MASTER.png" height="30px" alt=""></a>
+            <a href=""><img src="img/PAY.png" height="30px" alt=""></a>
+            <a href=""><img src="img/VISA.png" height="30px" alt=""></a>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-row  text-end">
+            <h6 class="me-2">Get delivery with the freshcart</h6>
+            <a href=""><img src="img/apple.png" height="49px" alt=""></a>
+            <a href=""><img src="img/googke.png" height="52px" alt=""></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- -------------copy right-------------- -->
+<div class="container ">
+    <div class="row d-flex flex-row text-center">
+        <div class="col-12">
+            <p class="text-secondary">Follow us on</p>
+            <a href=""><i class="fa-brands fa-facebook text-secondary"></i></a>
+            <a href=""><i class="fa-brands fa-twitter text-secondary"></i></a>
+            <a href=""><i class="fa-brands fa-instagram text-secondary"></i></a>
+        </div>
+        <div class="col-12">
+            <p class="text-secondary">© 2022 - 2023 FreshCart eCommerce HTML Template. All rights reserved.
+                Powered by Codescandy.
+            </p>
+        </div>
+        <div class="col">
+          <a href="/product.html" style="text-decoration: none; background-color: rgb(7, 252, 7); padding: 10px; border-radius: 10px;">Top</a>
+      </div>
+
+    </div>
+</div>
+
+
+  <script src="https://kit.fontawesome.com/43f3f12f65.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
