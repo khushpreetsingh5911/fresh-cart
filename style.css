@@ -37,3 +37,16 @@ color: forestgreen;
 .text a:hover{
     color: green;
 }
+
+
+.dropdown{
+    background-color: rgb(17, 175, 17);
+}   
+.download-app a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: .8em 1em;
+    border-radius: 5px;
+
+}
