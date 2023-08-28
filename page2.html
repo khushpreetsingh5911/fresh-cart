@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <!-- -------------navbar---------------
+ -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid d-flex justify-content-between">
+
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=" " height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="btn d-md-inline d-sm-inline d-flex d-lg-none gap-3 ">
+                    <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+                    <button type="button" class="btn btn-outline-success position-relative"><span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span><i class="fa-solid fa-user"></i></button>
+                    <button type="button" class="btn btn-outline-success"><i
+                            class="fa-solid fa-shopping-bag"></i></button>
+                </div>
+            </div>
+            <div class="btn d-md-none d-sm-none d-lg-flex d-none gap-3  ">
+                <button type="button" class="btn btn-outline-success "><i class="fa-solid fa-heart"></i></button>
+                <button type="button" class="btn btn-outline-success position-relative"><span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span><i class="fa-solid fa-user"></i></button>
+                <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-shopping-bag"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- --------------drop-down-menu------------- -->
+
+
+
+
+    <div class="container-fluid">
+        <div class="container-fluid dropdown d-lg-flex gap-3 d-md-block text-white p-3">
+
+            <div class="dropdown ">
+                <a class="btn  dropdown-toggle fw-bold text-white" href="#" role="button" id="dropdownMenuLink"
+                    data-mdb-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+                    All Departments
+                </a>
+
+                <ul class="dropdown-menu text-white" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn  text-white  btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Home
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn text-white   btn-sm dropdown-toggle " type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Shop
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn  text-white  btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Store
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn  text-white  btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Mega Menu
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group text-white">
+                <button class="btn  text-white  btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn  text-white  btn-sm dropdown-toggle" type="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false">
+                    Accounts
+                </button>
+                <ul class="dropdown-menu text-white">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item text-white" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- --------------app download section-------------- -->
+    <div class="contianer mt-5 p-5 bg-light">
+        <div class="row">
+            <div class="col d-flex ">
+                <img src="img/greend basket.png" height="100px" alt="">
+                <div class="row">
+                    <h3>
+                        Welcome to FreshCart
+                    </h3>
+                    <p>Download the app get free food & $30 off on your first order.</p>
+                </div>
+            </div>
+            <div class="col text-center download-app">
+                <a href="">Download FreshCart App</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-image">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="img-fluid" alt="Sample" />
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">Can you see me?</p>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-lg btn-danger" data-mdb-toggle="popover" title="Popover title"
+        data-mdb-content="And here's some amazing content. It's very engaging. Right?">
+        Click to toggle popover
+    </button>
+
+
+
+
+    <div class="container mt-5 p-5">
+        <div class="row">
+            <div class="col-12 col-lg-3 text-start ">
+                <i class="fa-regular fa-clock text-success fs-1"></i>
+                <h5>10 minute grocery now </h5>
+                <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+                </p>
+            </div>
+            <div class="col-12 col-lg-3 text-start">
+                <i class="fa-solid fa-gift text-success fs-1"></i>
+                <h5>10 minute grocery now </h5>
+                <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess
+                    & offers.
+                </p>
+            </div>
+            <div class="col-12  col-lg-3 text-start">
+                <i class="fa-solid fa-box text-success fs-1"></i>
+                <h5>10 minute grocery now </h5>
+                <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other
+                    categories.
+                </p>
+            </div>
+            <div class="col-12 col-lg-3 text-start">
+                <i class="fa-solid fa-rotate-left text-success fs-1"></i>
+                <h5>10 minute grocery now </h5>
+                <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions
+                    asked policy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------footer section----------- -->
+
+
+    <div class="container mt-5 p-5">
+        <div class="row">
+            <div class="col-12 text col-lg-3 d-flex flex-column  text-start">
+                <h4 class="text-success">Catorgaries</h4>
+                <a href="">Vegetables & Fruits</a>
+                <a href="">Breakfast & instant food</a>
+                <a href="">Bakery & Biscuits</a>
+                <a href="">Atta, rice & dal</a>
+                <a href="">Sauces & spreads</a>
+                <a href="">Organic & gourmet</a>
+                <a href="">Baby care</a>
+                <a href="">Cleaning essentials</a>
+                <a href="">Personal care</a>
+
+            </div>
+            <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                <h4 class="text-success">Get to know us</h4>
+                <a href="">Company </a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Help Center</a>
+                <a href="">One value</a>
+            </div>
+            <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                <h4 class="text-success">For Customers</h4>
+
+                <a href="">Payment</a>
+                <a href="">Shipping</a>
+                <a href="">Product Return</a>
+                <a href="">FAQ</a>
+                <a href="">Shop Checkout</a>
+            </div>
+            <div class="col-12 text col-lg-2 d-flex flex-column text-start">
+                <h4 class="text-success">Become a Shopper</h4>
+
+                <a href="">Shopper oppertunities</a>
+                <a href="">Earnings</a>
+                <a href="">Become a shopper</a>
+                <a href="">Earnings</a>
+                <a href="">new Recruiters</a>
+            </div>
+            <div class="col-12 text col-lg-3 d-flex flex-column text-start">
+                <h4 class="text-success">Freshcart programs</h4>
+                <a href="">Gifts card</a>
+                <a href="">Freshcart programs</a>
+                <a href="">Earnings</a>
+                <a href="">Products
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- ----------------payment section----------- -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-row">
+                    <h5>Payment Partners</h5>
+                    <a href=""><img src="img/AMAZON.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/AMERICAN.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/MASTER.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/PAY.png" height="30px" alt=""></a>
+                    <a href=""><img src="img/VISA.png" height="30px" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-row  text-end">
+                    <h6 class="me-2">Get delivery with the freshcart</h6>
+                    <a href=""><img src="img/apple.png" height="49px" alt=""></a>
+                    <a href=""><img src="img/googke.png" height="52px" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- -------------copy right-------------- -->
+        <div class="container ">
+            <div class="row d-flex flex-row">
+                <div class="col-12  text">
+                    <p class="text-secondary">Follow us on</p>
+                    <a href=""><i class="fa-brands fa-facebook text-secondary"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter text-secondary"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram text-secondary"></i></a>
+                </div>
+                <div class="col-12">
+                    <p class="text-secondary">© 2022 - 2023 FreshCart eCommerce HTML Template. All rights reserved.
+                        Powered by Codescandy.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/43f3f12f65.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
